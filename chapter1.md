@@ -1,4 +1,4 @@
-# 第1章 Python 初始
+# 第1章 Python 初识
 
 ## 1.1 关于 Python
 
