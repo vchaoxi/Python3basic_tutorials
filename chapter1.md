@@ -47,10 +47,19 @@ Python 是一门简单易学又功能强大的高级编程语言，开发社群�
 ## 1.2 安装 Python 
 
 ### 1.2.1 在 Windows 上安装 Python
+
 ### 1.2.2 在 Linux 上安装 Python 
+
 ### 1.2.3 在 Mac 上安装 Python
 
-## 
+## 1.3 Hello World
+
+### 1.3.1 使用解释提示器
+
+### 1.3.2 编辑器
+- Vim/Emacs
+- PyCharm
+- VSCode
   	  
 
 
