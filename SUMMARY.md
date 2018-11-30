@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [前言](README.md)
 * [第1章 Python 初识](chapter1.md)
-* [Second Chapter](second-chapter.md)
+* [第2章 Python 基础知识](second-chapter.md)
 
