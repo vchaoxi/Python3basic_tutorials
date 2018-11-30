@@ -60,7 +60,8 @@ Python 是一门简单易学又功能强大的高级编程语言，开发社群�
 - Vim/Emacs
 - PyCharm
 - VSCode
-  	  
+
+### 1.3.3 使用编辑器编写 Python 源代码并执行  	  
 
 
   	  
