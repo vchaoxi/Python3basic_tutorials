@@ -10,6 +10,7 @@ print('hello world') # print 是一个函数
 # 下面的 print 是一个函数  
 print('hello world')
 ```
+
 ## 2.2 字面常量
 
 ```python
@@ -17,6 +18,7 @@ print('hello world')
 上面的数字和字符串在 Python中被称为字面常量；  
 字面常量的字面指它就表示其本身的含义，没有任何的其他语法含义，常量指它的内容没法被修改。
 ```
+
 ### 2.2.1 数字
 
 数字主要有整形和浮点两种类型。
@@ -26,7 +28,8 @@ print('hello world')
 3.14 是浮点类型。  
 16.8E-4 也是浮点类型，表示16.8 * 10^-4 = 0.00168。
 ```
-注意：跟 C 语言等其他语言不同，Python中没有 long 等其他整形类型，int 就代表所有整形类型。
+
+**注意**：*跟 C 语言等其他语言不同，Python中没有 long 等其他整形类型，int 就代表所有整形类型。*
 
 ### 2.2.2 字符串
 
@@ -35,12 +38,14 @@ print('hello world')
 ```python
 'This is a string'
 ```
+
 **双引号**
 
 ```python
 This's is another string."
 ```
-注意：单引号字符串和双引号字符串在 Python 中基本上是一样的。
+
+**注意**：*单引号字符串和双引号字符串在 Python 中基本上是一样的。*
 
 **三引号**
 
@@ -52,6 +57,7 @@ Whai's ur name?
 I am "Dorayo".  
 '''
 ```
+
 **format() 方法**
 
 示例： 000_format_demo.py
@@ -89,6 +95,7 @@ Dorayo loves 中国!
   9   81  729  
   10  100 1000
 ```
+
 **转义字符**
 
 示例： 001_escape_sequences_demo.py
@@ -105,12 +112,14 @@ This is the second line
 ... This is the second sentence.')  
 This is the first sentence. This is the second sentence.
 ```
+
 **原始字符**
 
 ```python
 >>> print(r'Newlines are indicated by \n')  
 Newlines are indicated by \n
 ```
+
 ## 2.3 变量
 
 ### 2.3.1 变量的本质
@@ -124,21 +133,22 @@ Newlines are indicated by \n
 剩余的字符可以是字母、下划线或数字  
 大小写敏感，比如 myName 和 myname 就是两个不同的变量名
 ```
+
 ### 2.3.3 数据类型
 
 **Python 常用内置基本数据类型有**
 
-***布尔类型 True False***
+**布尔类型 True False**
 
-***字类型 int, float, complex***
+**字类型 int, float, complex**
 
-***序列类型 list, tuple, range***
+**序列类型 list, tuple, range**
 
-***字符串类型 str***
+**字符串类型 str**
 
-***集合类型 set***
+**集合类型 set**
 
-***映射类型 set***
+**映射类型 set**
 
 ## 2.4 逻辑行和物理行
 
@@ -176,6 +186,7 @@ IndentationError: unexpected indent
 >>> print('num is', num)  
 num is 7
 ```
+
 ## 2.6 基本输入和输出
 
 示例： 004_input_output_demo.py
@@ -190,6 +201,7 @@ Your name is:  dorayo
 
 注意：在 Python 3 中 input 默认接受的是字符串类型 str。
 ```
+
 
 
 
