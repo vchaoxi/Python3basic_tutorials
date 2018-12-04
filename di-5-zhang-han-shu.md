@@ -32,6 +32,7 @@ def print_star(line):
 # 下面这句是函数调用  
 print_star(line)
 ```
+
 示例2： 015_maximum_func.py
 
 ```python
@@ -44,6 +45,7 @@ def maximum(x, y):
            
 print(maximum(2, 3))
 ```
+
 函数定义时的参数被称为形参，函数调用时的参数被称为实参。
 
 ## 5.2 局部变量和全局变量
@@ -61,6 +63,7 @@ def func(num):
 func(num)  
 print('函数外: 函数调用后 num 的值为', num)
 ```
+
 示例2：017_global_var_demo.py
 
 ```python
@@ -76,7 +79,8 @@ def func():
 func()  
 print('函数外: 函数调用后 num 的值为', num)
 ```
-注意：尽量避免使用全局变量。
+
+**注意**：*尽量避免使用全局变量。*
 
 ## 5.3 函数参数
 
@@ -102,7 +106,8 @@ print(power(5))
 print(power(5, 2))  
 print(power(5, 3))
 ```
-注意：默认参数仅仅会被计算一次，但当默认参数是可变对象（如 list 或 dictionary）时，可能会出现有与预期不符的现象。
+
+**注意**：*默认参数仅仅会被计算一次，但当默认参数是可变对象（如 list 或 dictionary）时，可能会出现有与预期不符的现象。*
 
 示例： 019_default_para_mutable_demo.py
 
@@ -116,6 +121,7 @@ print(add_end(['a', 'b', 'c']))
 print(add_end())  
 print(add_end())
 ```
+
 以上代码修改如下：
 
 示例： 020_default_para_immutable.py
@@ -132,6 +138,7 @@ print(add_end(['a', 'b', 'c']))
 print(add_end())  
 print(add_end())
 ```
+
 ### 5.3.2 关键词参数
 
 函数调用时传入的实参默认是按照函数定义时形参中的顺序进行的，一般称这种实参为位置参数。
@@ -148,6 +155,7 @@ func(3, 8)
 func(25, c=80)  
 func(c=50, a=100)
 ```
+
 在函数调用时，如果同时使用位置参数和关键词参数，要确保关键词参数在位置参数之后。
 
 关键词参数是相对于位置参数而言的，更多的是函数调用时的概念，而非函数定义。不过当函数定义时形参最后一个参数是 **name 这种形式时，它会接收一个字典，该字典包含除之前形参之外的所有关键词参数。
@@ -169,6 +177,7 @@ def enroll(name, age, gender, **keywords):
 enroll('张三', 18, '男', 城市='郑州', 专业='Python')  
 enroll('李四', 22, '男', 城市='郑州', 专业='Python', 爱好='唱歌')
 ```
+
 ### 5.3.3 可变参数
 
 有时候我们可能会需要定义能够接收任意多个参数的函数，就像 print 一样，这就需要用到可变参数。
@@ -188,6 +197,7 @@ def list_items(*args):
 list_items('桔子', '香蕉', '苹果', '菠萝')  
 list_items('C', 'C++', 'Python', 'Java', 'PHP')
 ```
+
 关键词参数中我们提到 \*\*name 这种形式的参数只能出现在形参的最后一个，所以，如果形参中 \*args 跟 \*\*name 这两种形式需要同时出现时，\*args 要在 \*\*name 的前面。
 
 示例： 024_varargs_keywordargs_demo.py
@@ -207,6 +217,7 @@ def enroll(name, *args, **fam):
 enroll('张三', 父亲='张无忌', 母亲='殷素素')  
 enroll('李四', 22, '男', '郑州', 父亲='李小龙')
 ```
+
 \*args 之后 \*\*name 之前还可以出现其他的形参，这些形参被称为 'keyword-only' 参数，也就是只能通过关键词参数的方式来调用。
 
 从本质上来讲 \*args 和 \*\*name 这两种形式都是可变参数，只不过 \*\*name 这种形式在内部实现时被封装成了字典，只能用关键词参数的形式来调用。
@@ -231,6 +242,7 @@ func(*args2, **kw1)
 # 下面这个语句执行时会报错，请思考下为什么？  
 # func(*args2, **kw2) 
 ```
+
 **5.4 Lambda 表达式**
 
 **5.5 函数注释**
