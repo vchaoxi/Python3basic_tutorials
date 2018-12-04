@@ -169,4 +169,69 @@ def enroll(name, age, gender, **keywords):
 enroll('张三', 18, '男', 城市='郑州', 专业='Python')  
 enroll('李四', 22, '男', 城市='郑州', 专业='Python', 爱好='唱歌')
 ```
+### 5.3.3 可变参数
+
+有时候我们可能会需要定义能够接收任意多个参数的函数，就像 print 一样，这就需要用到可变参数。
+
+在函数定义的形参中出现 *args 这种参数，就表明这是个可变函数。
+
+示例： 023_varargs_demo.py
+
+```python
+def list_items(*args):      
+    id = 0      
+    for iterm in args:          
+        print(id, iterm)          
+        id = id + 1      
+    print('_' * 40)
+       
+list_items('桔子', '香蕉', '苹果', '菠萝')  
+list_items('C', 'C++', 'Python', 'Java', 'PHP')
+```
+关键词参数中我们提到 \*\*name 这种形式的参数只能出现在形参的最后一个，所以，如果形参中 \*args 跟 \*\*name 这两种形式需要同时出现时，\*args 要在 \*\*name 的前面。
+
+示例： 024_varargs_keywordargs_demo.py
+
+```python
+def enroll(name, *args, **fam):      
+    print('*' * 40)      
+    print('基本信息:')      
+    print(name)      
+    for item in args:          
+        print(item)      
+    print('-' * 40)      
+    print('家庭成员信息:')      
+    for kw in fam:          
+        print(kw, ':', fam[kw])
+           
+enroll('张三', 父亲='张无忌', 母亲='殷素素')  
+enroll('李四', 22, '男', '郑州', 父亲='李小龙')
+```
+\*args 之后 \*\*name 之前还可以出现其他的形参，这些形参被称为 'keyword-only' 参数，也就是只能通过关键词参数的方式来调用。
+
+从本质上来讲 \*args 和 \*\*name 这两种形式都是可变参数，只不过 \*\*name 这种形式在内部实现时被封装成了字典，只能用关键词参数的形式来调用。
+
+**解压参数**
+
+在调用形参中出现 *args 和 **name 这两种形式的函数时，我们可以通过传入一个 tuple/list 和 dict 来调用，这种方式被称为解压参数。
+
+示例： 025_unpacking_arg_demo.py
+
+```python
+def func(a, b, c=7, *args, d, **kw):      
+    print('a =', a, 'b =', b, 'c =', c, 'args =', args, 'd =', d, 'kw =', kw)   
+    
+args1 = (1, 2, 3, 4)  
+args2 = [10, 20, 30, 40, 50]  
+kw1 = {'d':11,  'aa':'!!', 'bb':'##'}  
+kw2 = {'aa':'!!', 'bb':'##'}  
+# 注意下面调用时的 * 和 **  
+func(*args1, **kw1)   
+func(*args2, **kw1)   
+# 下面这个语句执行时会报错，请思考下为什么？  
+# func(*args2, **kw2) 
+```
+**5.4 Lambda 表达式**
+
+**5.5 函数注释**
 
