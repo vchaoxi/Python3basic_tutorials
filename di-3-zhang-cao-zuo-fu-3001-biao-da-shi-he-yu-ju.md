@@ -75,7 +75,7 @@
 |(expression,...)|绑定或元组显示|
 |[expression,...]|列表显示|
 |{key:datum,...}|字典显示|
-|’expression,...'|字符串转换|
+|'expression,...'|字符串转换|
 
 不需要记忆，不确定时可以用 () 调整优先级
 
