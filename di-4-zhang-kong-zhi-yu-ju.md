@@ -21,7 +21,8 @@ else:
    
 print('结束!')
 ```
-注意：在 Python 语言里，没有 switch 语句。
+
+**注意**：*在 Python 语言里，没有 switch 语句。*
 
 ## 4.2 for 语句 - for in
 
@@ -39,6 +40,7 @@ cat 3
 window 6  
 improvement 11
 ```
+
 示例2： 007_print_range_demo.py
 
 ```python
@@ -51,6 +53,7 @@ improvement 11
 3  
 4
 ```
+
 **range() 函数**
 
 ```python
@@ -93,7 +96,8 @@ else:
       
 print('游戏结束!')
 ```
-注意：在 Python 语言里 for 和 while 循环可以有 else 子句。
+
+**注意**：*在 Python 语言里 for 和 while 循环可以有 else 子句。*
 
 ## 4.4 break 语句
 
@@ -113,6 +117,7 @@ while True:
    print('字符串', s, '的长度是:', len(s))  
 print('结束')
 ```
+
 示例2： 010_print_prime_num_demo.py
 
 ```python
@@ -125,6 +130,7 @@ for n in range(2, 10):
          # 内层循环迭代穷尽后走到这里，break 不会到这里
          print(n, '是一个素数')
 ```
+
 ## 4.5 continue 语句
 
 示例1： 011_nickname_len_check_demo.py
@@ -139,6 +145,7 @@ while True:
       continue      
    print('昵称', nickname, '长度合格')
 ```
+
 示例2： 012_even_odd_check_demo.py
 
 ```python
@@ -148,6 +155,7 @@ for num in range(2, 10):
       continue      
    print(num, '是一个奇数')
 ```
+
 ## 4.6 pass 语句
 
 Python 语言里 pass 是空语句，pass 语句不做任何事情，一般用做分支占位语句或空函数体占位语句，是为了保持程序结构的完整性和思路的流畅性。
