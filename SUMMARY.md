@@ -7,4 +7,5 @@
 * [第4章 控制语句](di-4-zhang-kong-zhi-yu-ju.md)
 * [第5章 函数](di-5-zhang-han-shu.md)
 * [第6章 数据类型](di-6-zhang-shu-ju-lei-xing.md)
+* [第7章 模块](di-7-zhang-mo-kuai.md)
 
