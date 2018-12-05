@@ -8,4 +8,5 @@
 * [第5章 函数](di-5-zhang-han-shu.md)
 * [第6章 数据类型](di-6-zhang-shu-ju-lei-xing.md)
 * [第7章 模块](di-7-zhang-mo-kuai.md)
+* [第8章 面向对象编程](di-8-zhang-mian-xiang-dui-xiang-bian-cheng.md)
 
