@@ -10,4 +10,5 @@
 * [第7章 模块](di-7-zhang-mo-kuai.md)
 * [第8章 面向对象编程](di-8-zhang-mian-xiang-dui-xiang-bian-cheng.md)
 * [第9章 错误、异常和调试](di-9-zhang-cuo-wu-3001-yi-chang-he-diao-shi.md)
+* [第10章 标准库](di-10-zhang-biao-zhun-ku.md)
 
