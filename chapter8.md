@@ -46,22 +46,22 @@ class 是定义类的关键词。
 class Dog():      
     '''这是一个模拟小狗特征和行为的类'''       
     
-def __init__(self, name, age):          
-    '''初始化属性 name 和 age'''          
-    self.name = name          
-    self.age = age       
+    def __init__(self, name, age):          
+        '''初始化属性 name 和 age'''          
+        self.name = name          
+        self.age = age       
     
-def sit(self):          
-    '''模拟小狗蹲下的命令'''          
-    print(self.name + '蹲下了')       
+    def sit(self):          
+        '''模拟小狗蹲下的命令'''          
+        print(self.name + '蹲下了')       
     
-def stand(self):          
-    '''模拟小狗站立的命令'''          
-    print(self.name + '站立起来了')       
+    def stand(self):          
+        '''模拟小狗站立的命令'''          
+        print(self.name + '站立起来了')       
     
-def jump(self):          
-    '''模拟小狗跳起来的命令'''          
-    print(self.name + '跳起来了')
+    def jump(self):          
+        '''模拟小狗跳起来的命令'''          
+        print(self.name + '跳起来了')
 ```
 
 **方法**

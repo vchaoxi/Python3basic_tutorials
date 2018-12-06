@@ -10,5 +10,5 @@
 * [第7章 模块](chapter7.md)
 * [第8章 面向对象编程](chapter8.md)
 * [第9章 错误、异常和调试](chapter9.md)
-* [第10章 标准库](chapter10.md)
+* [第8章 面向对象编程](chapter8.md)
 
