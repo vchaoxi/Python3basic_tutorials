@@ -148,7 +148,7 @@ Newlines are indicated by \n
 
 **集合类型 set**
 
-**映射类型 set**
+**映射类型 dict**
 
 ## 2.4 逻辑行和物理行
 
