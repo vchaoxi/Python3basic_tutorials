@@ -42,7 +42,7 @@ print('hello world')
 **双引号**
 
 ```python
-This's is another string."
+"This's is another string."
 ```
 
 **注意**：*单引号字符串和双引号字符串在 Python 中基本上是一样的。*
