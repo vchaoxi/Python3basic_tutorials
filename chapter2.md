@@ -140,7 +140,7 @@ Newlines are indicated by \n
 
 **布尔类型 True False**
 
-**字类型 int, float, complex**
+**数字类型 int, float, complex**
 
 **序列类型 list, tuple, range**
 
