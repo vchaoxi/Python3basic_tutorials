@@ -26,8 +26,8 @@ def print_star(line):
         print(' ' * space_num, end='')          
         print('*' * star_num)
   
-    print('请输入要打印多少行: ')  
-    line = int(input())   
+print('请输入要打印多少行: ')  
+line = int(input())   
     
 # 下面这句是函数调用  
 print_star(line)
