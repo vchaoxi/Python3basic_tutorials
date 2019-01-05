@@ -126,9 +126,9 @@ for n in range(2, 10):
       if n % x == 0:              
          print(n, '=', x, '*', n//x)              
          break      
-      else:          
-         # 内层循环迭代穷尽后走到这里，break 不会到这里
-         print(n, '是一个素数')
+   else:          
+      # 内层循环迭代穷尽后走到这里，break 不会到这里
+      print(n, '是一个素数')
 ```
 
 ## 4.5 continue 语句
