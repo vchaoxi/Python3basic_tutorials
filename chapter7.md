@@ -110,7 +110,25 @@ Python 为了提高效率，在我们导入非系统内置模块时，会在程�
 
 **注意**：*每一个包目录下面都会有一个__init__.py的文件，这个文件是必须存在的，否则，Python就把这个目录当成普通目录，而不是一个包。__init__.py可以是空文件，也可以有Python代码，因为__init__.py本身就是一个模块，而它的模块名就是它所在的那个上一级目录的目录名。*
 
+如果想要使用 sound 包下的 effects 包下的 echo 模块中的内容，可以有如下几种方式：
+方法一：
 
+```python
+import sound.effects.echo
+sound.effects.echo.echofilter(input, output, delay=0.7, atten=4)
+```
+方法二：
 
+```python
+from sound.effects import echo
+echo.echofilter(input, output, delay=0.7, atten=4)
+```
+
+方法三：
+
+```python
+from sound.effects.echo import echofilter
+echofilter(input, output, delay=0.7, atten=4)
+```
 
 
