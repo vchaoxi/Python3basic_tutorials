@@ -65,7 +65,7 @@ def n_divided_by_m(n, m):
   m = int(m)      
   # 出错后，我们可以把关键信息打印出来，进行debug  
   print('>>> n = %d' % n)      
-  print('>>> n = %d' % n)      
+  print('>>> m = %d' % n)      
   print(n, '/', m, '=', m/n)   
   
 def main():      
